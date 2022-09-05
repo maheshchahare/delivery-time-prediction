@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Prediction</title>
+	<link rel = "icon" href = 
+"https://www.techment.com/wp-content/uploads/2020/06/favicon.png"
+        type = "image/x-icon"> 
+</head>
+
+<h1>Delivery Time Prediction</h1>
+
+<body>
+	
+
+	<form action = "/result" method = "post">
+
+		<p>Distance: <input type = "int" autocomplete="off" name = "distance" text-align: center/></p>
+
+		<p>Quantity: <input type = "int" autocomplete="off" name = "quantity" text-align: center/></p>
+
+		
+		<!-- <p>
+			<label>Free<input type="radio" name="shipping" value="Free" /></label>      <p>Select your shipping option:</p>
+			<label>Paid<input type="radio" name="shipping" value="Paid" /></label>
+		</p> -->
+
+		<label>
+			Shipping:
+			
+			<select name="shipping">
+			  <option>Free</option>
+			  <option>Paid</option>
+			  
+			</select>
+		  </label>
+
+		<p><input type = "submit" value = "Submit" text-align: center/></p>
+
+	</form>  
+
+<h3>
+	<!-- Distance = {{distance}} , Quantity = {{quantity}} and Shipping = {{shipping}} and its value is {{value}}  -->
+	Estimated time of delivery is <i>{{time}}</i> hours.
+</h3>
+
+
+</body>
+</html>
