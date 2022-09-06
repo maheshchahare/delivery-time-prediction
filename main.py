@@ -37,6 +37,6 @@ def result():
         time = np.ceil(float(regression_model.predict(input)))
         
     return render_template("result.html",time = time)
- 
+
 if __name__ == '__main__':
     app.run(debug=True)
